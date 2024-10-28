@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import profilePic from "./assets/profile.jpg";
 import skillIco1 from "./assets/pencil.png";
 import skillIco2 from "./assets/management.png";
@@ -10,8 +10,15 @@ import projectIco4 from "./assets/dragon.png";
 import projectIco5 from "./assets/registration.png";
 import projectIco6 from "./assets/balance-sheet.png";
 import projectIco7 from "./assets/tschom.png";
+import projectIco8 from "./assets/nutrition-label.png";
 
 const MainSection: React.FC = () => {
+  const [showAll, setShowAll] = useState<boolean>(false);
+
+  const toggleShowAll = (): void => {
+    setShowAll(!showAll);
+  };
+
   return (
     <div>
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-5">
@@ -330,6 +337,12 @@ const MainSection: React.FC = () => {
                     type="button"
                     className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
                   >
+                    LESS
+                  </button>
+                  <button
+                    type="button"
+                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+                  >
                     PHP
                   </button>
                 </div>
@@ -523,69 +536,126 @@ const MainSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="inline-block max-w-sm border rounded-lg shadow dark:bg-gray-800 border-gray-700 m-5">
-              <a
-                href="https://codepen.io/Razvan-Zamfir/pen/NWZOKMK"
-                target="_blank"
-              >
-                <img className="rounded-t-lg" src={projectIco6} alt="" />
-              </a>
-              <div className="p-5">
-                <a
-                  href="https://codepen.io/Razvan-Zamfir/pen/NWZOKMK"
-                  target="_blank"
-                >
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Modern Balance Sheet
-                  </h5>
-                </a>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Just as the title suggests
-                </p>
-                <div className="pl-16">
-                  <button
-                    type="button"
-                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+            {showAll && (
+              <>
+                <div className="inline-block max-w-sm border rounded-lg shadow dark:bg-gray-800 border-gray-700 m-5">
+                  <a
+                    href="https://codepen.io/Razvan-Zamfir/pen/NWZOKMK"
+                    target="_blank"
                   >
-                    CSS
-                  </button>
-                  <button
-                    type="button"
-                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
-                  >
-                    HTML
-                  </button>
-                  <button
-                    type="button"
-                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
-                  >
-                    CSS
-                  </button>
-                  <button
-                    type="button"
-                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
-                  >
-                    CSS
-                  </button>
-                  <button
-                    type="button"
-                    className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
-                  >
-                    CSS
-                  </button>
+                    <img className="rounded-t-lg" src={projectIco6} alt="" />
+                  </a>
+                  <div className="p-5">
+                    <a
+                      href="https://codepen.io/Razvan-Zamfir/pen/NWZOKMK"
+                      target="_blank"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Modern Balance Sheet
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      A simple and clean model of a balance sheet
+                    </p>
+                    <div className="pl-16">
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+                      >
+                        HTML
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <a href="https://codepen.io/Razvan-Zamfir" target="_blank">
+                <div className="inline-block max-w-sm border rounded-lg shadow dark:bg-gray-800 border-gray-700 m-5">
+                  <a
+                    href="https://codepen.io/Razvan-Zamfir/pen/YzoJKYj"
+                    target="_blank"
+                  >
+                    <img className="rounded-t-lg" src={projectIco8} alt="" />
+                  </a>
+                  <div className="p-5">
+                    <a
+                      href="https://codepen.io/Razvan-Zamfir/pen/YzoJKYj"
+                      target="_blank"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Nutritional Label
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      A model of the well-known food labels
+                    </p>
+                    <div className="pl-16">
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400"
+                      >
+                        HTML
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                      <button
+                        type="button"
+                        className="border font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 bg-gray-950/50 text-white border-gray-700 hover:bg-gray-700/50 hover:border-gray-400 invisible"
+                      >
+                        CSS
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}{" "}
+            {/*       END OF HIDDEN PROJECTS        */}
+            <div className="flex flex-col items-center">
               <button
+                onClick={toggleShowAll}
                 type="button"
                 className="border rounded-lg text-lg px-16 py-2 my-4 bg-gray-800 text-white border-gray-600 hover:bg-gray-400/50 hover:border-gray-400 font-bold"
               >
-                View More
+                {showAll ? "View Less" : "View More"}
               </button>
-            </a>
+            </div>
           </div>
         </section>
 
