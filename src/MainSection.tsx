@@ -158,15 +158,15 @@ const MainSection: React.FC = () => {
                   <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
                 </div>
               </div>
-              <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-                <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
+              <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col">
                   <div className="pattern-dots-md gray-light">
-                    <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6  ">
+                    <div className="rounded bg-gray-800 p-4 transform translate-x-6 -translate-y-6">
                       <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-transparent border border-gray-500 mb-4 flex-shrink-0 p-2">
                         {" "}
                         <img src={skillIco1} />
                       </div>
-                      <div className="flex-grow ">
+                      <div className="flex-grow">
                         <h2 className=" text-xl title-font font-medium mb-3">
                           Web Development
                         </h2>

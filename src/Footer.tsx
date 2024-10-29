@@ -3,10 +3,10 @@ import profileIcon from "./assets/razvan-zamfir-favicon-color.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 rounded-lg shadow m-4 mx-auto my-auto sm:text-center">
+    <footer className="bg-gray-800 rounded-lg shadow m-4 mx-auto my-auto sm:text-center page-footer">
       <div className="bg-gray-800 w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <div>
-          <span className="sm:text-center text-gray-400">© 2024 </span>
+          <span className="sm:text-center text-gray-400">©2024 </span>
           <a
             href="https://www.linkedin.com/in/razvan-andrei-zamfir"
             target="_blank"
