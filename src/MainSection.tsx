@@ -298,7 +298,7 @@ const MainSection: React.FC = () => {
               </div>
             </div>
             <div className="inline-block max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 m-5">
-              <a href="https://ferienidee.at/">
+              <a href="https://ferienidee.at/" target="_blank">
                 <img
                   className="rounded-t-lg"
                   src={projectIco7}
@@ -349,7 +349,7 @@ const MainSection: React.FC = () => {
               </div>
             </div>
             <div className="inline-block max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 m-5">
-              <a href="https://rooms4holiday.com/">
+              <a href="https://rooms4holiday.com/" target="_blank">
                 <img
                   className="rounded-t-lg"
                   src={projectIco1}
@@ -394,7 +394,7 @@ const MainSection: React.FC = () => {
               </div>
             </div>
             <div className="inline-block max-w-sm border rounded-lg shadow dark:bg-gray-800 border-gray-700 m-5">
-              <a href="https://sietar.at/">
+              <a href="https://sietar.at/" target="_blank">
                 <img
                   className="rounded-t-lg"
                   src={projectIco2}
@@ -494,7 +494,7 @@ const MainSection: React.FC = () => {
                 href="https://codepen.io/Razvan-Zamfir/pen/abMjMer"
                 target="_blank"
               >
-                <img className="rounded-t-lg" src={projectIco4} alt="" />
+                <img className="rounded-t-lg" src={projectIco4} />
               </a>
               <div className="p-5">
                 <a
