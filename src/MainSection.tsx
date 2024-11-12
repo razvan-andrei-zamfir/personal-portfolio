@@ -506,7 +506,7 @@ const MainSection: React.FC = () => {
                   </h5>
                 </a>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  A simple & fun JavaScript game
+                  A fun mini JavaScript game
                 </p>
                 <div>
                   <button
@@ -555,7 +555,7 @@ const MainSection: React.FC = () => {
                       </h5>
                     </a>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      A simple and clean model of a balance sheet
+                      A clean updated model of a balance sheet
                     </p>
                     <div className="pl-16">
                       <button
