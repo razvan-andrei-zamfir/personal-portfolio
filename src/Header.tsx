@@ -28,8 +28,8 @@ const Header: React.FC = () => {
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a
-            href="Razvan-Andrei Zamfir - CV 2024.pdf"
-            download="/Razvan-Andrei Zamfir - CV 2024.pdf"
+            href="\Razvan-Andrei Zamfir - CV 2024 .pdf"
+            download="\Razvan-Andrei Zamfir - CV 2024.pdf"
           >
             <button
               type="button"
