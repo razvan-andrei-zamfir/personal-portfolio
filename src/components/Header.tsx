@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profileIcon from "./assets/razvan-zamfir-favicon-color.png";
+import profileIcon from "../assets/razvan-zamfir-favicon-color.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

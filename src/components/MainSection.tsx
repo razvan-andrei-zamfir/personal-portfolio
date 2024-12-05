@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import profilePic from "./assets/profile.jpg";
-import skillIco1 from "./assets/pencil.png";
-import skillIco2 from "./assets/management.png";
-import skillIco3 from "./assets/code-optimisation.png";
-import projectIco1 from "./assets/r4h.png";
-import projectIco2 from "./assets/sietar.png";
-import projectIco3 from "./assets/weather.png";
-import projectIco4 from "./assets/dragon.png";
-import projectIco5 from "./assets/registration.png";
-import projectIco6 from "./assets/balance-sheet.png";
-import projectIco7 from "./assets/tschom.png";
-import projectIco8 from "./assets/nutrition-label.png";
+import profilePic from "../assets/profile.jpg";
+import skillIco1 from "../assets/pencil.png";
+import skillIco2 from "../assets/management.png";
+import skillIco3 from "../assets/code-optimisation.png";
+import projectIco1 from "../assets/r4h.png";
+import projectIco2 from "../assets/sietar.png";
+import projectIco3 from "../assets/weather.png";
+import projectIco4 from "../assets/dragon.png";
+import projectIco5 from "../assets/registration.png";
+import projectIco6 from "../assets/balance-sheet.png";
+import projectIco7 from "../assets/tschom.png";
+import projectIco8 from "../assets/nutrition-label.png";
 
 const MainSection: React.FC = () => {
   const [showAll, setShowAll] = useState<boolean>(false);

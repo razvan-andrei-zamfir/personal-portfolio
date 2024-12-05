@@ -1,5 +1,5 @@
 import React from "react";
-import profileIcon from "./assets/razvan-zamfir-favicon-color.png";
+import profileIcon from "../assets/razvan-zamfir-favicon-color.png";
 
 const Footer: React.FC = () => {
   return (
